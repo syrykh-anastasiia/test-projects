@@ -1,0 +1,428 @@
+.phone-list, .mail-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.visual-card, .modal .img-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+    margin-top: 0;
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 46px;
+    }
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    h3 {
+        font-size: 24px;
+    }
+}
+
+a {
+    transition: color 0.4s ease-in-out;
+}
+
+.link {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.form-control {
+    margin-bottom: 2px;
+    box-shadow: none;
+}
+
+@media (min-width: 992px) {
+    .form-control {
+        padding: 19px 34px;
+    }
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 112px;
+    resize: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    .btn {
+        min-width: 362px;
+        font-size: 18px;
+    }
+}
+
+.our-projects-section {
+    padding: 20px 0;
+}
+
+@media (min-width: 992px) {
+    .our-projects-section {
+        padding: 61px 0 107px;
+    }
+}
+
+.our-projects-section h2 {
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    .our-projects-section h2 {
+        margin: 0 0 50px;
+    }
+}
+
+.our-projects-section p {
+    margin: 0 0 21px;
+}
+
+@media (min-width: 1200px) {
+    .our-projects-section .container {
+        max-width: 1650px;
+    }
+}
+
+.our-projects-section .row {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .our-projects-section .row {
+        margin-bottom: 83px;
+    }
+}
+
+.our-projects-section .text-holder {
+    max-width: 1130px;
+    margin: 0 auto 20px;
+}
+
+@media (min-width: 992px) {
+    .our-projects-section .text-holder {
+        margin-bottom: 119px;
+    }
+}
+
+.visual-card {
+    transition: transform 0.4s ease-in-out;
+    padding-bottom: 107%;
+    position: relative;
+    overflow: hidden;
+}
+
+.visual-card:before {
+    transition: height 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+    background: linear-gradient(to top, #25364a, rgba(0, 0, 0, 0.001));
+}
+
+.visual-card:hover {
+    z-index: 2;
+    transform: scale(1.04);
+}
+
+.visual-card:hover:before {
+    height: 300%;
+}
+
+.visual-card:hover .text-holder {
+    opacity: 1;
+    visibility: visible;
+}
+
+.visual-card .text-holder {
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 2;
+    padding: 20px 10px 10px;
+}
+
+@media (min-width: 992px) {
+    .visual-card .text-holder {
+        height: calc(100% - 100px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .visual-card .text-holder {
+        padding: 53px 115px 10px;
+    }
+}
+
+.visual-card h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .visual-card h3 {
+        bottom: 31px;
+    }
+}
+
+.visual-card .title {
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    padding-bottom: 26px;
+    margin-bottom: 24px;
+    line-height: 1.35;
+}
+
+.visual-card .title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 90px;
+    background: #fff;
+}
+
+@media (min-width: 992px) {
+    .visual-card .btn {
+        min-width: 203px;
+    }
+}
+
+.modal .img-box {
+    padding-bottom: 100%;
+    margin: 0 0 20px;
+}
+
+.modal .close {
+    position: absolute;
+    margin: 0;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+}
+
+@media (min-width: 992px) {
+    .modal .close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+#footer {
+    background: #08172d;
+    padding: 20px 0;
+}
+
+@media (min-width: 992px) {
+    #footer {
+        padding: 32px 0 97px;
+    }
+}
+
+#footer h2 {
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    #footer h2 {
+        margin-bottom: 58px;
+    }
+}
+
+#footer address {
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    #footer .container {
+        max-width: 1250px;
+    }
+}
+
+@media (min-width: 992px) {
+    address {
+        margin-bottom: 50px;
+    }
+}
+
+address p {
+    margin-bottom: 21px;
+}
+
+.contact-form {
+    border: 3px solid #344258;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .contact-form {
+        padding: 38px 38px 31px;
+        border-width: 5px;
+    }
+}
+
+.contact-form .link-holder {
+    padding: 14px 0 12px;
+}
+
+@media (min-width: 992px) {
+    .contact-form input[type="submit"] {
+        min-width: 290px;
+    }
+}
+
+.phone-list {
+    color: #fff;
+    line-height: 1.3;
+}
+
+@media (min-width: 576px) {
+    .phone-list {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .phone-list {
+        font-size: 30px;
+    }
+}
+
+.phone-list a {
+    color: inherit;
+}
+
+.phone-list a:hover {
+    color: #344258;
+}
+
+.mail-list {
+    color: #3d95e3;
+    padding: 13px 0 0;
+}
+
+@media (min-width: 576px) {
+    .mail-list {
+        position: relative;
+        padding: 13px 0 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mail-list {
+        padding: 13px 17px 5px;
+    }
+}
+
+@media (min-width: 576px) {
+    .mail-list:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -20px;
+        width: 3px;
+        background-color: #0058a7;
+    }
+}
+
+.mail-list li {
+    margin-bottom: 21px;
+}
+
+.mail-list a {
+    color: inherit;
+}
+
+.mail-list a:hover {
+    color: #fff;
+}
